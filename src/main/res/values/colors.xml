@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#686d77</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="text_hint_color">#BFBFBF</color>
+    <color name="text_color">#321D17</color>
+    <color name="header_text_color">#64B5F6</color>
+    <color name="header_text_color_selected">#95caf4</color>
+    <color name="text_color_selected">#3295caf4</color>
+    <color name="links_text_color">#C4C4C4</color>
+
+
+
+</resources>

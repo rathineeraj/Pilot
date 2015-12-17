@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_city">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/term"
+                android:textColor="@color/links_text_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/term"
+                android:textColor="@color/links_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/forty_dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hundred_fifty_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/code_input"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/sixty_dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hundred_fifty_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/code_input"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/sixty_dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hundred_fifty_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/code_input"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:maxLength="1"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/sixty_dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/hundred_fifty_dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/ten_dp"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:layout_marginStart="@dimen/ten_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/code_input"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="@dimen/sixty_dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_margin="@dimen/five_dp"
+                android:layout_marginTop="@dimen/twenty_dp"
+                android:background="@drawable/buttons_selector"
+                android:padding="@dimen/ten_dp"
+                android:text="@string/confirm" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

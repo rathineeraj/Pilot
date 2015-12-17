@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_city"
+    tools:context=".MainActivity">
+
+    <include android:id="@+id/header"
+        layout="@layout/action_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:layout_marginEnd="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/locale_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_margin="@dimen/five_dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/five_dp">
+
+                <Spinner
+                    android:id="@+id/locale_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textDirection="anyRtl"
+                    android:background="@drawable/spinner_background_for_eng"
+                    android:gravity="center"
+                    android:prompt="@string/app_name" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_margin="@dimen/five_dp"
+                android:background="@drawable/bgedittext"
+                android:hint="@string/email"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_color"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/twenty_dp"
+                 />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_margin="@dimen/five_dp"
+                android:background="@drawable/bgedittext"
+                android:hint="@string/password"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_color"
+                android:inputType="textPassword"
+                android:padding="@dimen/twenty_dp"
+                 />
+
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixty_dp"
+                android:layout_margin="@dimen/five_dp"
+                android:background="@drawable/buttons_selector"
+                android:gravity="center"
+                android:padding="@dimen/ten_dp"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:text="@string/login"
+                android:textSize="19sp" />
+
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/thirty_dp"
+                android:gravity="center"
+                android:padding="@dimen/five_dp"
+                android:background="@drawable/text_selector"
+                android:textColor="@color/links_text_color"
+                android:text="@string/register_here"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

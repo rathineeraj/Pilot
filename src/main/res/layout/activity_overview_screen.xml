@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_city">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/video_icn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/twenty_dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="@dimen/two_dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:onClick="openProfileScreen"
+            android:text="@string/skip"
+            android:textStyle="bold"
+            android:background="@drawable/text_selector"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/buttoninvitaton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingEnd="@dimen/thirty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingStart="@dimen/thirty_dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/buttons_selector"
+            android:drawablePadding="@dimen/thirty_dp"
+            android:drawableEnd="@drawable/play_icn"
+            android:gravity="right|center"
+            android:text="@string/play"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

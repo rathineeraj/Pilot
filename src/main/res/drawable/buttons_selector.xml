@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <corners android:bottomLeftRadius="@dimen/two_dp" android:bottomRightRadius="@dimen/two_dp" android:topLeftRadius="@dimen/two_dp" android:topRightRadius="@dimen/two_dp" />
+            <stroke android:width="@dimen/two_dp" android:color="@color/header_text_color_selected"></stroke>
+            <gradient android:angle="-90" android:endColor="@color/header_text_color_selected" android:startColor="@color/header_text_color_selected">
+
+            </gradient>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+
+            <corners android:bottomLeftRadius="@dimen/two_dp" android:bottomRightRadius="@dimen/two_dp" android:topLeftRadius="@dimen/two_dp" android:topRightRadius="@dimen/two_dp" />
+            <stroke android:width="@dimen/two_dp" android:color="@color/header_text_color_selected"></stroke>
+            <gradient android:angle="-90" android:endColor="@color/header_text_color_selected" android:startColor="@color/header_text_color_selected">
+
+            </gradient>
+        </shape>
+    </item>
+
+    <item>
+
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/two_dp" android:bottomRightRadius="@dimen/two_dp" android:topLeftRadius="@dimen/two_dp" android:topRightRadius="@dimen/two_dp" />
+            <stroke android:width="@dimen/two_dp" android:color="@color/header_text_color"></stroke>
+            <gradient android:angle="-90" android:endColor="@color/header_text_color" android:startColor="@color/header_text_color">
+
+            </gradient>
+        </shape>
+    </item>
+</selector>
