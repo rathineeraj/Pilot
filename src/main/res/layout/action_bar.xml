@@ -1,21 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar_top"
-    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/transparent"
-    android:minHeight="?attr/actionBarSize">
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetStart="0dp"
+    app:theme="@style/MyThemeOverlay.ActionBar">
 
-
+    <!-- app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"-->
     <TextView
         android:id="@+id/toolbar_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="20sp"
+        android:text="Pilot"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:layout_marginLeft="@dimen/ten_dp"
         android:textColor="@color/header_text_color"
-        android:text="Pilot" />
+        android:textSize="20sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="end"
+        android:visibility="gone"
+        android:id="@+id/notification_layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sounds"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/header_text_color"/>
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/notification_switch"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:kswBackColor="@color/header_bg_color"
+            app:kswThumbColor="@color/main_bg_color"
+            app:kswThumbHeight="@dimen/thirty_dp"
+            app:kswThumbWidth="@dimen/thirty_five_dp"
+            app:kswTintColor="@color/main_bg_color" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/search_layout1"
+        android:background="@color/main_bg_color"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/search_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/five_dp"
+            android:layout_weight="1.80"
+            android:drawablePadding="@dimen/ten_dp"
+            android:drawableStart="@drawable/ic_action_search"
+            android:ems="10"
+            android:hint="@string/action_search"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoComplete"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:visibility="visible">
+
+            <requestFocus />
+
+        </EditText>
+
+        <AutoCompleteTextView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/five_dp"
+            android:layout_weight="1.8"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="@string/action_search"
+            android:imeOptions="actionGo"
+            android:inputType="textAutoComplete"
+            android:paddingStart="@dimen/fifteen_dp"
+            android:paddingLeft="@dimen/fifteen_dp"
+            android:paddingRight="@dimen/fifteen_dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:visibility="gone">
+
+            <requestFocus />
+
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:id="@+id/search_close_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/twenty_seven_dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:layout_weight=".2"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/remove_btn" />
+    </LinearLayout>
 
 </android.support.v7.widget.Toolbar>

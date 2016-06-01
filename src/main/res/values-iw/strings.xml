@@ -1,59 +1,188 @@
 <resources>
-    <string name="app_name">פיילוט</string>
-
+    <string name="app_name">ClearSite</string>
     <string name="hello_world">שלום עולם</string>
     <string name="action_settings">הגדרות</string>
-
-    <string name="email">מייל</string>
-    <string name="password">ססמא</string>
-    <string name="confirm_password">אשר ססמא</string>
-    <string name="login">כניסה</string>
-    <string name="register_here">לחץ כאן להרשם</string>
-
-    <string name="first_name">שפ פרטי</string>
+    <string name="email">דוא"ל</string>
+    <string name="password">סיסמא</string>
+    <string name="confirm_password">חזור על הסיסמא</string>
+    <string name="login">התחבר</string>
+    <string name="forget_password">שכחתי סיסמא</string>
+    <string name="first_name">שם פרטי</string>
     <string name="last_name">שם משפחה</string>
     <string name="Company_title">חברה</string>
-    <string name="Company_name">שם החברה</string>
-    <string name="phone">טלפון</string>
-    <string name="phone_optional">טלפון - לא חובה</string>
-    <string name="fax">פקס</string>
-    <string name="term">תנאי שימוש</string>
-    <string name="register">הרשמה</string>
-
+    <string name="Company_name">שם חברה </string>
+    <string name="phone">מספר נייד</string>
+    <string name="phone_optional">טלפון נוסף (לא חייב)</string>>
+    <string name="fax">פקס (לא חייב)</string>
+    <string name="term">על ידי לחיצה על כפתור "צור חשבון" אתה מאשר את תנאי השימוש</string>
+    <string name="create_password">צור סיסמא בכדי להשלים את תהליך ההרשמה</string>
+    <string name="create_account">צור חשבון</string>
+    <string name="register">הרשם</string>
+    <string name="no_account">אין לך חשבון? </string>
+    <string name="register_now">הרשם</string>
+    <string name="register_here">חשבונך יחובר לדוא"ל</string>
     <string name="title_activity_user_profile">פרופיל</string>
     <string name="title_activity_register">RegisterActivity</string>
-
     <string name="first_name_validation">אנא הכנס שם פרטי</string>
     <string name="last_name_validation">אנא הכנס שם משפחה</string>
     <string name="company_name_validation">אנא הכנס שם שם חברה</string>
-    <string name="email_validation">אנא הכנס מייל</string>
-    <string name="password_validation">אנא הכנס ססמא</string>
+    <string name="email_validation">אנא הכנס כתובת דוא"ל</string>
+    <string name="enter_valid_emal">אנא הזן כתובת דוא"ל תקנית</string>
+    <string name="email_already_exists">כתובת הדוא"ל שהכנסת כבר רשומה במערכת</string>
+    <string name="password_validation">אנא הכנס סיסמא</string>
+    <string name="password_mismatch">הסיסמאות שהכנסת לא תואמות</string>
     <string name="confirm_password_validation">אנא הכנס ססמא שוב</string>
-    <string name="password_mismatch">אין התאמה</string>
-    <string name="phone_number_validation">אנא הכנס טלפון</string>
-    <string name="fax_validation">אנא הכנס פקס</string>
+    <string name="phone_number_validation">אנא הכנס מספר נייד</string>
+    <string name="fax_validation">אנא הכנס מספר פקס</string>
     <string name="log_out">להתנתק</string>
     <string name="name">שֵׁם</string>
     <string name="try_later">בבקשה נסה שוב מאוחר יותר</string>
-
     <string name="phone1">מספר טלפון 1</string>
     <string name="phone2">מספר טלפון 2</string>
     <string name="phone3">מ3פר טלפון 2</string>
     <string name="phone4">מספר טלפון 4</string>
     <string name="phone5">מ5פר טלפון 4</string>
+    <string name="can_edit">אפשר עריכה</string>
     <string name="locale">אזור</string>
     <string name="profile_loading">טוען פרופיל ...</string>
     <string name="register_message">רישום אנא המתן ...</string>
     <string name="login_message">מתחבר...</string>
     <string name="profile_loading_error">אופס משהו השתבש בעת טעינת פרופיל</string>
+    <string name="starts_activity">החל בפעילות</string>
+    <string name="received">התקבל</string>
 
-    <string name="next">לְהַמשִׁיך</string>
+    <string name="connect">התחבר</string>
     <string name="confirm">לאשר קוד</string>
-    <string name="title_activity_password_activty">פעילות טוויטר</string>
     <string name="get_role_error">אופס משהו השתבש בעת טעינת תפקידים</string>
     <string name="get_role_message">המתן בבקשה</string>
     <string name="loading_roles">תפקידי טעינה ...</string>
+    <string name="network_error">אין חיבור רשת</string>
     <string name="invitation_activity">הַזמָנָה</string>
-    <string name="play">לְשַׂחֵק</string>
-    <string name="skip">לְדַלֵג</string>
+    <string name="play">נגן</string>
+    <string name="skip">דלג</string>
+    <string name="sign_in_error">כתובת דוא"ל או סיסמא שגויים</string>
+
+    <string name="create_log_title">יצירת יומן חדש</string>
+    <string name="log_title">כותרת היומן</string>
+    <string name="choose_role">בחר תפקיד</string>
+    <string name="choose_address">הגדר כתובת (לא חייב)</string>
+    <string name="choose_date">בחר תאריך לפתיחת יומן</string>
+    <string name="have_invitation_code">יש לי קוד הזמנה</string>
+    <string name="explain_invitation">מהו קוד הזמנה?</string>
+    <string name="add_contact">הוסף אנשי קשר</string>
+    <string name="choose_location_title">בחר מיקום</string>
+    <string name="action_search">חיפוש</string>
+    <string name="action_calendar">Calender</string>
+
+    <string name="materials_and_workers">חומר ועובדים</string>
+    <string name="add_content">הוסף תוכן</string>
+
+    <string name="sunday">ראשון</string>
+    <string name="monday">שני</string>
+    <string name="tuesday">שלישי</string>
+    <string name="wednesday">רביעי</string>
+    <string name="thursday">חמישי</string>
+    <string name="friday">שישי</string>
+    <string name="saturday">שבת</string>
+
+    <string name="note">הערה</string>
+    <string name="comments">תגובות</string>
+    <string name="quality_control">בקרת איכות</string>
+    <string name="crew">צוות</string>
+    <string name="raw_materials">חומרי גלם</string>
+    <string name="tools">כלים</string>
+
+    <string name="january">ינואר</string>
+    <string name="february">פברואר</string>
+    <string name="march">מרץ</string>
+    <string name="april">אפריל</string>
+    <string name="may">מאי</string>
+    <string name="june">יוני</string>
+    <string name="july">יולי</string>
+    <string name="august">אוגוסט</string>
+    <string name="septemeber">ספטמבר</string>
+    <string name="october">אוקטובר</string>
+    <string name="november">נובמבר</string>
+    <string name="december">דצמבר</string>
+
+    <string name="enter_a_comment">הקלד תגובה</string>
+    <string name="add_note">הוסף הערה</string>
+    <string name="post_title">פוסט חדש</string>
+    <string name="log_entry_delete_message"> נמחקה ההערה</string>
+    <string name="save">שמור </string>
+    <string name="cancel">בטל </string>
+    <string name="edit_comment">תגובה עריכת </string>
+
+
+    <string name="receive_or_edit">קבל חומר/ערוך הזמנה</string>
+    <string name="meterial_title">חומרי גלם</string>
+    <string name="add_raw_material">הוסף חומרי גלם</string>
+    <string name="select_vendor">בחר ספק</string>
+    <string name="material_description">תאור החומר</string>
+    <string name="quantity_type">יחדות מידה</string>
+
+    <string name="quantity_description">תאור הבטון</string>
+    <string name="type">יחדות</string>
+    <string name="finish_concrete">סגור יציקת בטון</string>
+    <string name="receive_order">קבל הזמנה</string>
+
+    <string name="crews">עובדים</string>
+    <string name="active_crews">עובדים פעילים</string>
+    <string name="other_crews">עובדים נוספים</string>
+    <!--<string name="regi">רג'י </string>-->
+    <string name="start_time">שעת התחלה</string>
+    <string name="end_time">שעת סיום</string>
+    <string name="amount">כמות</string>
+    <string name="start">התחלה</string>
+    <string name="end">סיום</string>
+    <string name="daily">יומית</string>
+    <string name="add_crew">הוסף כח אדם</string>
+    <string name="contractor_name">שם קבלן</string>
+    <string name="active_tools">כלים פעילים</string>
+    <string name="other_tools">כלים נוספים</string>
+    <string name="info_text1">השתמש בתנועת צביטה על מנת להקטין או להגדיל </string>
+    <string name="info_text2">לחץ לחיצה ארוכה על התמונה על מנת לקבוע סמן</string>
+    <string name="info_text3">לצורך המחשת המיקום בלבד</string>
+    <string name="help">Help</string>
+
+    <string name="all">הכל</string>
+    <string name="users">משתמשים</string>
+    <string name="activities">פעילויות</string>
+
+    <string name="qa_doc_title">בקרת איכות - טפסים</string>
+    <string name="approved">מאושרים </string>
+    <string name="in_progress">בתהליך </string>
+    <string name="new_qa_doc">חדשים </string>
+
+    <string name="item_to_execute">לביצוע אלמנט </string>
+    <string name="plan">תכנית </string>
+    <string name="contractor">מבצע קבלן </string>
+    <string name="item_id">אלמנט זיהוי </string>
+    <string name="sign_title">המסמך לאישור כאן חתום</string>
+    <string name="sign_and_approve">ואשר חתום </string>
+    <string name="make_digital_signature">דיגיטלית חתימה בצח </string>
+
+    <string name="add_from_other_Log">הוסף מיומן אחר</string>
+    <string name="contacts">אנשי קשר</string>
+
+    <string name="notification">התראות </string>
+    <string name="reminders">תזכורות </string>
+    <string name="add_log">הוסף יומן</string>
+    <string name="current_log">יומן נוכחי</string>
+    <string name="management">הנהלה </string>
+    <string name="advisors">יועצים </string>
+    <string name="contractors">קבלנים </string>
+    <string name="vendors">ספקים </string>
+
+    <string name="date">תאירך </string>
+    <string name="sounds">צליל</string>
+    <string name="daily_report">דו"ח יומי</string>
+    <string name="today">היום</string>
+    <string name="select_log">בחר יומן</string>
+    <string name="support">תמיכה</string>
+    <string name="profile_setting">הגדרת פרופיל</string>
+    <string name="video_guides">הדרכת וידאו</string>
+    <string name="type_request">הקלד פניה</string>
+    <string name="send">שלח</string>
+    <string name="close_daily_view">סגור תצוגה יומית</string>
 </resources>

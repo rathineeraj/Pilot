@@ -8,9 +8,28 @@
     </string-array>
 
     <string-array name="languages">
-        <item>אינג \'</item>
-        <item>עבר\ית</item>
+        <item>English</item>
+        <item>עברית</item>
 
     </string-array>
+
+    <string-array name="nav_drawer_items">
+        <item>@string/management</item>
+        <item>@string/advisors</item>
+        <item>@string/contractors</item>
+        <item>@string/vendors</item>
+        <item>@string/daily_signature</item>
+        <item>@string/log_out</item>
+    </string-array>
+
+    <array name="week_name">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </array>
 
 </resources>
