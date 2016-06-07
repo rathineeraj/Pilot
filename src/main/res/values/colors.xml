@@ -62,4 +62,10 @@
     <color name="caldroid_555">#555</color>
     <color name="caldroid_light_red">#ff7f7f</color>
 
+
+    <color name="verified_data_color">#a995f2</color>
+    <color name="user_data_color">#c564b6</color>
+    <color name="barrow_data_color">#76b22f</color>
+    <color name="setting_data_color">#7b5b18</color>
+
 </resources>

@@ -8,8 +8,8 @@ android {
         applicationId "com.pilot"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 7
-        versionName "1.5"
+        versionCode 9
+        versionName "1.7"
         multiDexEnabled true
     }
     buildTypes {
